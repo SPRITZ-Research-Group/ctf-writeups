@@ -77,7 +77,7 @@ The first step was to write a [simple disassembler](./tools/disasm.py) that woul
 ...
 ```
 
-Using some simple bash kung-fu, we were able to immediately figure out which registers are actually used:
+Using some simple bash kung fu, we were able to immediately figure out which registers are actually used:
 
 ```bash
 $ grep -oP 'r\d+' code.asm | sort | uniq
@@ -116,11 +116,11 @@ It also generates nice CFGs, for example for the function at 20:
 
 ![CFG for 20](./graphs/function_20.png)
 
-The callgraph doesn't look too bad, but there's some recursion going on. All those simple instructions are messing with our brains. We didn't study CS for this!
+The callgraph doesn't look too bad, but there's some recursion going on. All those simple instructions were messing with our brains. We didn't study CS for this!
 
 # Lifting the bytecode
 
-Being the lazy millennials we are, we clearly needed some(one|thing) to offload the manual work to. We thought of lifting the bytecode to LLVM intermediate language. We then grab (yet another) coffee, let the LLVM optimizers do some unspeakable black magic, and presto! we have greatly cleaned-up IL. There are tools to decompile LLVM IL to C (e.g. fdc, CppBackend), but as always happens during CTFs we either had issues getting them to work or the output wasn't that good. So we trusted that compiling and then feeding it into the decompiler would do. The final tool is available [here](./tools/transllvm.py).
+Being the lazy millennials we are, we clearly needed some(one|thing) to offload the manual work to. We thought of lifting the bytecode to LLVM intermediate language. We then grab (yet another) coffee, let the LLVM optimizers do some unspeakable black magic, and presto! we have greatly cleaned-up IL. There are tools to decompile LLVM IL to C (e.g. fcd, CppBackend), but as always happens during CTFs we either had issues getting them to work or the output wasn't that good. So we trusted that compiling and then feeding it into the decompiler would do. The final tool is available [here](./tools/transllvm.py).
 
 ## SSA form basics
 
@@ -399,7 +399,7 @@ We finally know how to generate the output from an input *n*:
 1. Calculate *s* as the sum of the total stopping times for all hailstone sequences for 2...*n*;
 2. Calculate the result as the *n*-th Fibonacci number modulo *s*.
 
-We wrote a [C program](./tools/solve.c) to find the flag more efficiently. We calculated stopping times the naive way (except we used `(3n + 1)/2` to perform two steps in one) - no caching. For Fibonacci we used a simple iterative solution that runs in linear time. While there are solutions in logarithmic time, we don't really care as the runtime is heavily dominated by the Collatz loop.
+We wrote a [C program](./tools/solve.c) to find the flag more efficiently. We calculated stopping times the naive way (except we used `(3n + 1)/2` to perform two steps in one) - no caching. For Fibonacci we used a simple iterative solution that runs in linear time with n. While there are solutions in logarithmic time, we don't really care as the runtime is heavily dominated by the Collatz loop.
 
 ```
 $ time ./solve 9009131337 
