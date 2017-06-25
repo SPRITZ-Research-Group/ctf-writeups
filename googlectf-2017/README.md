@@ -1,5 +1,5 @@
 # Google CTF 2017 (Quals)
 
-**Team**: spritzer
+**Team**: spritzers
 
 **Placement:** 84th (583 points)
