@@ -96,7 +96,7 @@ $ grep 'inc r25' code.asm | wc -l
 0
 ```
 
-So `r25` is never incremented. This is interesting because its initial value is zero, so we can assume `r25 = 0` in the entire program. This allow us to translate code like `CDEC r25, next1, next2` into an uncoditional jump to `next2`.
+So `r25` is never incremented. This is interesting because its initial value is zero, so we can assume `r25 = 0` in the entire program. This allows us to translate code like `CDEC r25, next1, next2` into an unconditional jump to `next2`.
 
 We can check how many return registers are actually used by calls:
 

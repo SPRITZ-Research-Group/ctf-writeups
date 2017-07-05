@@ -4,7 +4,7 @@
 
 **Team:** spritzers
 
-**Task**: reverse / Transformer
+**Task:** reverse / Transformer
 
 **Points:** 400
 
