@@ -2,7 +2,7 @@
 
 **CTF:** VolgaCTF 2017 Quals
 
-**Team:** spritzers
+**Team:** spritzers (from [SPRITZ Research Group](http://spritz.math.unipd.it/))
 
 **Task:** reverse / Transformer
 

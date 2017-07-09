@@ -2,7 +2,7 @@
 
 **CTF:** PlaidCTF 2017
 
-**Team:** spritzers
+**Team:** spritzers (from [SPRITZ Research Group](http://spritz.math.unipd.it/))
 
 **Task:** pwnable/yacp
 
