@@ -13,7 +13,7 @@ In this strange game, the only winning move is pwn.
 [IP and credentials for VNC server]
 ```
 
-This is the second part of [DEFCON 1](../../rev/defcon-50). Read that one first. The same system image is used here. We want to dump the flag at 0x1664 on the remote server.
+This is the second part of [DEFCON 1](../../rev/defcon1-50). Read that one first. The same system image is used here. We want to dump the flag at 0x1664 on the remote server.
 
 When we enter the right password that we found while decrypting the ROM, we are presented with a game. First, we choose whether we want to be USA or USSR. Then the game displays a world map with four bases for each party. During each turn, we select one out of the four bases, then freely choose a point on the map and hit enter to launch a missile there. It animates two trails for our missile and for the other party's response missile, and two explosions once they hit.
 
