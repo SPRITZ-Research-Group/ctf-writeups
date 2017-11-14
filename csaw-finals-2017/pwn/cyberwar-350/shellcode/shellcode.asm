@@ -1,0 +1,4 @@
+bits 16
+
+mov word [0x7c14], 0x1664
+jmp 0x7c00
