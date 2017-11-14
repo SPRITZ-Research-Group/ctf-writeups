@@ -59,4 +59,4 @@ flag{ok_you_decrypted_it_now_plz_pwn_it!}
 flag{__PWN_ON_SERVER_TO_GET_REAL_FLAG__}
 ```
 
-The first flag is for this challenge. The second one refers to the [second part](../../pwn/cyberwar).
+The first flag is for this challenge. The second one refers to the [second part](../../pwn/cyberwar-350).
